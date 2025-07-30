@@ -169,7 +169,7 @@ function showPopup(index) {
   popup.classList.remove("hidden");
   if (isFinal) {
     document.getElementById("share-btn").onclick = () => {
-      const tweet = `I just conquered the ZKdungeon on union-zkdungeon.vercel.app by @Shinosuka_eth!\nFaced the Fudders, looted $auBTC, and proved We. Are. Union.\nzkgm 🚀\n\nJoin the quest: union-zkdungeon.vercel.app`;
+      const tweet = `I just conquered the ZKdungeon on union-zkdungeon.vercel.app by @Shinosuka_eth!\nFaced the Fudders, looted $auBTC, and proved We. Are. Union.\nzkgm 🚀\n\nJoin the quest: union-zkdungeon.vercel.app\n\nhttps://x.com/Shinosuka_eth/status/1950629135279337711`;
       const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweet)}`;
       window.open(url, "_blank");
       for (let i = 0; i < 5; i++) setTimeout(() => confetti(), i * 300);
