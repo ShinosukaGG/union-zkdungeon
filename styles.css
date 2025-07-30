@@ -224,10 +224,11 @@ body {
 }
 
 /* POPUP - Now on left above play area */
+
 .popup {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 24px;      /* space from the left of the screen */
+  top: 22px;       /* aligns vertically with play area/terminal */
   transform: none;
   background-color: #181818;
   border: 3.5px solid #A9ECFD;
