@@ -227,8 +227,8 @@ body {
 
 .popup {
   position: absolute;
-  left: 24px;      /* space from the left of the screen */
-  top: 22px;       /* aligns vertically with play area/terminal */
+  left: 48px;      /* space from the left of the screen */
+  top: 64px;       /* aligns vertically with play area/terminal */
   transform: none;
   background-color: #181818;
   border: 3.5px solid #A9ECFD;
