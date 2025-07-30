@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZKdungeon Game by Shinosuka</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- JetBrains Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Supermolot font must be self-hosted -->
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <img src="badge3.png" alt="Union Logo" class="union-logo" />
+      <span class="union-text">UNION</span>
+    </div>
+    <div class="header-center">
+      <a href="https://x.com/shinosuka_eth" target="_blank" class="game-title">ZKdungeon Game by Shinosuka</a>
+    </div>
+  </header>
+
+  <!-- Intro Screen -->
+  <div id="intro-screen" class="intro-screen">
+    <div class="intro-box">
+      <h1 class="intro-title">Are you ready to Enter ZKdungeon?</h1>
+
+      <div id="username-entry-box">
+        <h3>Enter Your Twitter Username</h3>
+        <input type="text" id="username-input" placeholder="e.g. Shinosuka_eth" />
+        <button id="enter-username-button">Continue</button>
+      </div>
+
+      <div id="intro-buttons" class="hidden">
+        <button id="start-button" class="start-button">New Game</button>
+        <a href="https://x.com/shinosuka_eth" target="_blank" class="dev-button">Explore the Dev</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game Container -->
+  <div id="game-container" class="game-container hidden">
+    <!-- Play Area -->
+    <div class="play-area">
+      <div class="path-container" id="path-container">
+        <!-- Milestones and dots added by JS -->
+      </div>
+      <!-- Character Block -->
+      <div id="character" class="character-block pulse">
+        <img id="pfp" src="pfp.png" alt="Player PFP" />
+      </div>
+    </div>
+
+    <!-- Terminal & Input Section -->
+    <div class="side-panel">
+      <div id="terminal" class="terminal-box"></div>
+      <div class="input-box">
+        <button id="btn1" class="input-button">Option 1</button>
+        <button id="btn2" class="input-button">Option 2</button>
+        <button id="jump-btn" class="input-button">Jump</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p><em>This is the official ZKdungeon Game built by <a href="https://x.com/shinosuka_eth" target="_blank">@Shinosuka_eth</a>. Enjoy your Gaming Experience!</em></p>
+  </footer>
+
+  <!-- Confetti Script -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
